@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/paymants" element={<MainLayout />} />
+        <Route path="/cryptoCatch" element={<Landing />} />
 
       </Routes>
     </Router>
