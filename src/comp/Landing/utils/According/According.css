@@ -1,0 +1,125 @@
+
+
+.collapsed {
+    height: 0;
+    opacity: 0;
+    
+}
+
+.accordingSection {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 80px 80px
+    
+}
+
+.fade-in-slide {
+    animation: fadeSlideIn 0.5s ease forwards;
+    transform: translateX(-20px);
+    opacity: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 46px;
+    padding: 32px;
+
+    border-radius: 24px;
+    
+
+
+}
+
+.logoCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.accordingWrap {
+    display: grid;
+    grid-template-columns: 286px 1fr;
+    column-gap: 32px;
+    max-width: 100%;
+    padding: 32px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+
+}
+
+.accordingBlockCont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+    max-width: 1280px;
+    margin: 90px auto 0;
+    padding-bottom: 90px;
+}
+
+.firstBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.accordingHeaderTitle {
+    font-size: 50px;
+    text-align: center; 
+    margin: 0;
+}
+
+.contentDiv {
+    display: none;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        transform: translateX(-20px);
+        /* Зміщений на 20px вліво */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        /* Плавне переміщення до початкового положення */
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1005px){
+    .accordingWrap {
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+@media (max-width: 520px){
+    .accordingSection {
+        padding: 0;
+    }
+    .accordingWrap {
+        background-color: transparent;
+    }
+    .accordingBlockCont {
+        row-gap: 0;
+    }
+    .accordingHeaderTitle {
+        font-size: 20px;
+    }
+}
+@media (max-width: 780px){
+    .accordingWrap {
+        grid-template-columns: 1fr;
+    }
+    .fade-in-slide {
+        display: none;
+    }
+    .contentDiv {
+        display: block;
+    }
+
+}
+

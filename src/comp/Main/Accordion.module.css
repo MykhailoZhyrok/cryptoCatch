@@ -1,0 +1,19 @@
+.accordionItem {
+    margin-top: 20px;
+}
+
+.accordionHeader {
+    background-color: #333;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.accordionContent {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+}

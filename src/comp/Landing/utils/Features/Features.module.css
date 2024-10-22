@@ -1,0 +1,71 @@
+.textItem1 {
+    color: white;
+    font-size: 50px;
+    max-width: 600px;
+    margin: 0;
+}
+
+.featuresWrapMain {
+    padding: 80px;
+}
+
+.textItem2 {
+    color: white;
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.contFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, max-content);
+    grid-column-gap: 61px;
+    column-gap: 61px;
+    grid-row-gap: 48px;
+    row-gap: 48px;
+
+}
+
+.containerForFeatures {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.featuresHeader {
+    display: flex;
+    gap: 20;
+    justify-content: space-between;
+}
+
+@media (max-width:860px) {
+    .contFeatures {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        column-gap: 0;
+    }
+    .featuresHeader {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+
+    }
+    .textItem1 {
+        font-size: 30px;
+
+    }
+    .textItem2 {
+        font-size: 18px;
+        max-width: 100%;
+        
+    }
+    .featuresWrapMain {
+        padding: 40px;
+    }
+}
+
+@media (max-width:480px) {
+    .featuresWrapMain {
+        padding: 30px 10px;
+    }
+}

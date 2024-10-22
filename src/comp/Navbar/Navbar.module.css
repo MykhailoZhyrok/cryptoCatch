@@ -1,0 +1,253 @@
+.headerCont {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.serviceText {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.headerService {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+}
+
+.iconRotated {
+    transform: rotate(180deg);
+    transition: transform 0.1s ease;
+}
+
+.navCont {
+    display:flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: 0px 80px;
+    width: 100%;
+
+}
+
+.serviceSettings {
+
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+   
+}
+
+
+.serviceCloud {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: visible;
+}
+
+.serviceColl {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+    padding: 15px 15px;
+    z-index: 1000;
+}
+
+.serviceColl:hover {
+    background-color: #dbdbdb;
+}
+
+.serviceTitle {
+    margin: 0;
+    font-size: 20px;
+}
+
+.serviceExt {
+    display: flex;
+    position: absolute;
+    padding-left: 5px;
+    margin-top: 8px;
+}
+
+
+
+.bussinessSettings {
+    display: none; 
+    background-color: #fff;
+}
+
+.open {
+    max-height: 200px;
+    opacity: 1;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
+
+.settingsCont {
+    display: flex;
+    align-items: center;
+
+}
+
+.headeSettingsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.buttonCont {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.linkLog {
+    width: 130px;
+    cursor: pointer;
+}
+
+.buttonPod {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+}
+
+.logButton {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+
+.regButton {
+    background: #fff;
+    color: #000;
+    border: none
+}
+
+.logoCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+}
+
+.ulNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.ulSettings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.navbatContMain {
+     display: flex; 
+     position: relative; 
+     margin-top: 8; 
+     z-index: 100 
+    
+    }
+.buttonNavCont {
+    display: block;
+}
+
+.burgerMenu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    
+}
+.burgerMenuCont {
+    display: none;
+   
+}
+.logoText {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+@media (max-width:1150px) {
+    .buttonNavCont {
+        display: none;
+    }
+    .buttonCont {
+        display: none;
+
+    }
+    .headerService {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: flex;
+    }
+    .burgerMenuCont {
+        display: block;
+        max-width: 100%; 
+        width: 100%;
+      
+    }
+    .navCont {
+        padding: 24px 32px;
+    }
+    .ulNav {
+        display: none;
+    }
+   
+   
+}
+
+@media (max-width:500px) {
+    .logoCont{
+        font-size: 20px;
+        gap: 5px
+    }
+    .logoText {
+        font-size: 20px;
+    }
+}
