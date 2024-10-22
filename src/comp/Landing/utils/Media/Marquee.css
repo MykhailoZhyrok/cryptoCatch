@@ -8,6 +8,7 @@
   .marquee {
     display: flex;
     white-space: nowrap;
+    
   }
   
   @keyframes marquee {

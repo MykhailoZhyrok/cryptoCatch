@@ -61,7 +61,7 @@ export default function Landing() {
       <SliderComponent />
       {/* <MediaComponent/> */}
       <div className={styles.marqueeCont}>
-        <Marquee />
+        <Marquee color='white'/>
       </div>
       <According />
       <Features />

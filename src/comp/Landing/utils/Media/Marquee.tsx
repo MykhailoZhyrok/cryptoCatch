@@ -2,8 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Marquee.css'; // Підключаємо файл стилів
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFeather, faChessKing, faChessKnight } from '@fortawesome/free-solid-svg-icons';
+interface MarqueeProps {
+    color: string;
+  }
 
-const Marquee: React.FC = () => {
+
+const Marquee: React.FC<MarqueeProps> = ({ color }) => {
   const marqueeRef = useRef<HTMLDivElement>(null);
 
   const items = [
@@ -49,7 +53,7 @@ const Marquee: React.FC = () => {
         style={{ animation: `marquee 10s linear infinite` }}
       >
         {items.map((item, index) => (
-          <a key={index} style={{ padding: 10, textDecoration: 'none' }} href="#">
+          <a key={index} style={{ padding: 10, textDecoration: 'none', color: color }} href="#">
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <FontAwesomeIcon style={{ fontSize: 60 }} icon={item.icon} />
               <h2>{item.title}</h2>
@@ -57,7 +61,7 @@ const Marquee: React.FC = () => {
           </a>
         ))}
         {items.map((item, index) => (
-          <a key={`copy-${index}`} style={{ padding: 10, textDecoration: 'none' }} href="#">
+          <a key={`copy-${index}`} style={{ padding: 10, textDecoration: 'none', color: color }} href="#">
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <FontAwesomeIcon style={{ fontSize: 60 }} icon={item.icon} />
               <h2>{item.title}</h2>

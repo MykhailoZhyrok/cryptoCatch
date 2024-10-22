@@ -9,7 +9,7 @@ export default function SupportsCoin() {
             <h1 className={styles.mainText}>
             Поддерживаемые монеты и блокчейны
             </h1>
-            <Marquee/>
+            <Marquee color='black'/>
         </div>
     </div>
   )
