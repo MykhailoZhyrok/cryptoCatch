@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cryptoCatch/static/css/main.537e075a.css",
-    "main.js": "/cryptoCatch/static/js/main.a4dfe172.js",
+    "main.js": "/cryptoCatch/static/js/main.203f1ab7.js",
     "static/js/453.fc054035.chunk.js": "/cryptoCatch/static/js/453.fc054035.chunk.js",
     "static/media/pngegg.png": "/cryptoCatch/static/media/pngegg.1564d502c906e16b6d77.png",
     "static/media/cryptoheader1.webp": "/cryptoCatch/static/media/cryptoheader1.8f38382ddcf6f46b6b99.webp",
@@ -10,11 +10,11 @@
     "static/media/—Pngtree—red blue trading candlestick up_18142023.png": "/cryptoCatch/static/media/—Pngtree—red blue trading candlestick up_18142023.9e2d65eefac7f2c88295.png",
     "index.html": "/cryptoCatch/index.html",
     "main.537e075a.css.map": "/cryptoCatch/static/css/main.537e075a.css.map",
-    "main.a4dfe172.js.map": "/cryptoCatch/static/js/main.a4dfe172.js.map",
+    "main.203f1ab7.js.map": "/cryptoCatch/static/js/main.203f1ab7.js.map",
     "453.fc054035.chunk.js.map": "/cryptoCatch/static/js/453.fc054035.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.537e075a.css",
-    "static/js/main.a4dfe172.js"
+    "static/js/main.203f1ab7.js"
   ]
 }
