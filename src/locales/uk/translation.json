@@ -1,0 +1,216 @@
+{
+    "navbar": {
+        "services": {
+            "header": "Сервіси",
+            "personal": "Особистий",
+            "business": "Бізнес",
+            "wallet": {
+                "title": "Гаманець",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "p2pTrade": {
+                "title": "P2P Трейд",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "staking": {
+                "title": "Стейкінг",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "conversion": {
+                "title": "Конвертація",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "earnings": {
+                "title": "Заробіток",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "whiteLabel": {
+                "title": "Шлюз WhiteLabel",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "cryptoProcessing": {
+                "title": "Криптопроцесінг",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "merchantCatalog": {
+                "title": "Каталог мерчантів",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "massPayments": {
+                "title": "Масові виплати",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        },
+        "links": {
+            "tariffs": "Тарифи",
+            "blog": "Блог"
+        },
+        "long": {
+            "log": "Увійти",
+            "reg": "Реєстрація"
+        }
+    },
+    "landing": {
+        "header": {
+            "text": "ПРИЙМАЙТЕ КРИПТОПЛАТЕЖІ",
+            "title": "Криптокач",
+            "startButton": "ПОЧАТОК РОБОТИ"
+        }
+    },
+    "according": {
+        "headerTitle": "Ми спростимо вам підключення до цифрових платежів",
+        "sections": {
+            "bills": {
+                "title": "Рахунки",
+                "description": "Цей спосіб підходить для оплати товарів або послуг. Ви можете встановити ціну в фіатній валюті, щоб платник обрав криптовалюту і сплатив відповідну суму, або одразу вказати бажану криптовалюту, а адреса криптовалюти буде згенерована після вибору мережі."
+            },
+            "recurringPayments": {
+                "title": "Регулярні платежі",
+                "description": "Вибір бізнесу за підпискою. Платежі на основі підписки для вашого бізнесу. Вашому клієнту потрібно налаштувати його лише один раз, щоб регулярно стягувати плату."
+            },
+            "host": {
+                "title": "Хост",
+                "description": "Універсальне рішення для будь-якого бізнесу. Найбільш налаштовуваний варіант, що підходить для будь-якого типу проекту. Дозвольте вашим клієнтам поповнювати свій особистий кредит на будь-яку суму та використовувати його без затримок."
+            },
+            "paymentLinks": {
+                "title": "Платіжні посилання",
+                "description": "Вибір єдиного платежу. Створіть рахунок, поділіться посиланням і отримайте оплату — це просте платіжне рішення для будь-якого онлайн-бізнесу."
+            }
+        }
+    },
+    "slider": {
+        "slide1": {
+            "title": "Мінт PTPRD: запустіть свої PTPRD в роботу",
+            "text": "Почніть виводити та конвертувати накопичені PTPRD токени прямо зараз. Доступно на Uriswap."
+        },
+        "slide2": {
+            "title": "PTPRD airdrops",
+            "text": "Почніть виводити та конвертувати накопичені Cryptomus токени прямо зараз. Доступно на Uniswap."
+        }
+    },
+    "steps": {
+        "title": "Як приймати криптовалютні платежі з CryptoProd",
+        "startButton": "ПОЧАТОК РОБОТИ",
+        "journeyTitle": "1. Розпочніть свою подорож",
+        "journeyDescription": "Приєднуйтесь до CryptoProd, зареєструвавшись з некастодіальним гаманцем, номером телефону або адресою електронної пошти, щоб почати приймати платежі.",
+        "createMerchantTitle": "Створити продавця",
+        "inputNameLabel": "Введіть ім'я",
+        "firstMerchantPlaceholder": "Перший торговець",
+        "createButton": "Створити",
+        "firstMerchantTitle": "2. Створіть свого першого продавця",
+        "firstMerchantDescription": "Налаштуйте свій перший торговий рахунок в Cryptomus, щоб почати приймати платежі та отримати надійний бізнес-гаманець.",
+        "apiKeysTitle": "Ваші ключі API",
+        "statusTitle": "Статус",
+        "activeStatus": "Активний",
+        "paymentApiKeyTitle": "Платіжний API-ключ",
+        "paymentApiKey": "kTaz9Eh*********OBh9aG5",
+        "regeneratePaymentKey": "Повторно згенерувати ключ API платежів",
+        "payoutApiKeyTitle": "API-ключ виплати",
+        "payoutApiKey": "kTaz9Eh*********OBh9355",
+        "regeneratePayoutKey": "Повторно згенерувати ключ Payout API",
+        "generateApiKeysTitle": "3. Сгенерувати API-ключі",
+        "generateApiKeysDescription": "Налаштуйте свій перший торговий рахунок в Cryptomus, щоб почати приймати платежі та отримати надійний бізнес-гаманець."
+    },
+    "suppotCoin": {
+        "title": "Підтримувані монети та блокчейни"
+    },
+    "features": {
+        "header": "Які функції криптоплатіжного шлюзу CrypProd?",
+        "textItem1": "Немає ковзаючих резервів/",
+        "textItem2": "Глобальне покриття",
+        "textItem3": "Нульові повернення платежів/",
+        "textItem4": "Миттєві транзакції",
+        "feature1": {
+            "title": "Захист від волатильності",
+            "description": "Автоматична конвертація вхідних платежів у стейблкоїни захистить від волатильності криптовалюти, так само як і функція автоматичного конвертування виводу, яка дозволяє вам виводити криптовалюту в бажаній валюті — і обидві функції можна використовувати абсолютно безкоштовно!"
+        },
+        "feature2": {
+            "title": "Група підтримки",
+            "description": "Служба підтримки, доступна в Telegram, електронною поштою, прямо на нашому сайті у вигляді квитків або у вигляді особистого менеджера для наших продавців, завжди поруч, щоб вирішити проблеми та миттєво відповісти на питання ваших клієнтів."
+        },
+        "feature3": {
+            "title": "Управління статусом транзакцій",
+            "description": "Відрегулюйте допустиму точність оплати, перевірте, чи був рахунок переплачений або недоплачений, і надішліть додатковий рахунок для збору залишкової суми."
+        },
+        "feature4": {
+            "title": "Масові виплати",
+            "description": "Здійснюйте масові виплати на тисячі адрес з автоматичною конвертацією всього за один момент."
+        },
+        "feature5": {
+            "title": "Гнучкі комісії для кожної монети",
+            "description": "Встановіть додаткові комісії або додайте знижку на вибрані монети."
+        },
+        "allFeatures": "УСІ ФУНКЦІЇ"
+    },
+    "blog": {
+        "title": "Блог",
+        "post": {
+            "title": "Торгівля Dogecoin для початківців: основи, типи та стратегії",
+            "date": "17 жовтня 2024 р.",
+            "comments": "0 коментарів",
+            "description": "Відкрийте для себе ключові стратегії торгівлі Dogecoin та отримайте поради для успішних інвестицій у цю популярну криптовалюту."
+        },
+        "post2": {
+            "title": "5 найкращих способів заробити криптовалюту",
+            "date": "10 жовтня 2024 р.",
+            "comments": "0 коментарів",
+            "description": "Досліджуйте найефективніші методи заробітку криптовалюти, щоб максимізувати свої інвестиції в 2024 році."
+        },
+        "post3": {
+            "title": "Топ-10 криптовалют для інвестування у 2024 році",
+            "date": "3 жовтня 2024 р.",
+            "comments": "0 коментарів",
+            "description": "Ось список найбільш перспективних криптовалют для інвестування у 2024 році."
+        },
+        "post4": {
+            "title": "Торгові сигнали: чому вам слід їх використовувати",
+            "date": "26 вересня 2024 р.",
+            "comments": "0 коментарів",
+            "description": "Досліджуйте, як торгові сигнали можуть допомогти вам приймати зважені інвестиційні рішення."
+        },
+        "post5": {
+            "title": "Експертна думка: чому важливо бути в курсі ринку криптовалют",
+            "date": "19 вересня 2024 р.",
+            "comments": "0 коментарів",
+            "description": "Досліджуйте, чому знання про тенденції крипторинку може змінити ваші інвестиційні рішення."
+        }
+    },
+    "partners": {
+        "header": "Наші партнери",
+        "text": "Наша мета — надати вам можливість працювати з кращими постачальниками послуг, які підтримують ваш бізнес."
+    },
+    "contact": {
+        "header": "Контакти",
+        "text": "Пишіть нам у Telegram або використовуйте електронну пошту для зв'язку."
+    },
+    "footer": {
+    "company": "Компанія",
+    "home": "Головна",
+    "tariffs": "Тарифи",
+    "roadmap": "Дорожня карта",
+    "brandGuide": "Посібник з бренду",
+    "blog": "Блог",
+    "faq": "Часто задавані питання",
+    "contacts": "Контакти",
+    "personal": "Особистий",
+    "wallet": "Гаманець",
+    "p2pExchange": "P2P-обмін",
+    "staking": "Стейкінг",
+    "conversion": "Конвертація",
+    "earnings": "Заробіток",
+    "explorer": "Оглядач",
+    "business": "Бізнес",
+    "whiteLabel": "White Label",
+    "cryptoProcessing": "Криптопроцесінг",
+    "eCommercePlugins": "Плагіни для електронної комерції",
+    "api": "API",
+    "support": "Підтримка",
+    "telegram": "Telegram",
+    "email": "Електронна пошта",
+    "socialMedia": "Соціальні мережі",
+    "privacyPolicy": "Політика конфіденційності",
+    "termsOfUse": "Умови використання",
+    "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium architecto corrupti eveniet temporibus aliquam? Blanditiis non ducimus incidunt molestiae totam. Laborum, unde delectus. Ratione, magnam possimus quam voluptatibus natus deleniti!"
+}
+
+}

@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperClass } from 'swiper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFeather, faChessKing, faChessKnight } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
+
 import image1 from '../../../../static/carousel/pngegg.png';
 import image2 from '../../../../static/carousel/—Pngtree—red blue trading candlestick up_18142023.png';
 
@@ -14,6 +16,8 @@ import 'swiper/css/scrollbar';
 import './SliderComponent.css';
 
 const SliderComponent: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div style={{ backgroundColor: '#000', padding: '25px', borderRadius: '15px', maxWidth: '100%', overflow: 'hidden' }}>
       <Swiper
@@ -31,8 +35,9 @@ const SliderComponent: React.FC = () => {
 
             <div className="slideCont">
               <div>
-                <h1 className="slideTitle">Минт PTPRD: запустите свои PTPRD в работу</h1>
-                <p className="slideText">Начните выводить и конвертировать накопленные PTPRD токены прямо сейчас. Доступно на Uriswap.</p>
+                <h1 className="slideTitle">{t('slider.slide1.title')}
+                </h1>
+                <p className="slideText">{t('slider.slide1.text')}</p>
               </div>
               <div className="linkCont">
                 <a className="slideLink"href="#"><FontAwesomeIcon icon={faFeather} /></a>
@@ -46,8 +51,9 @@ const SliderComponent: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide className='slideSwiper' >
           <div style={{ textAlign: 'left' }}>
-            <h1 className="slideTitle" >PTPRD airdrops</h1>
-            <p style={{ fontSize: '1.25rem', marginTop: '15px' }}>Начните выводить и конвертировать накопленные Cryptomus токены прямо сейчас. Доступно на Uniswap.</p>
+          <h1 className="slideTitle">{t('slider.slide2.title')}
+                </h1>
+                <p className="slideText">{t('slider.slide2.text')}</p>
             <div style={{ marginTop: '20px' }}>
               <img src="/path-to-certik-logo.png" alt="Certik" style={{ width: '100px', marginRight: '10px' }} />
               <img src="/path-to-uniswap-logo.png" alt="Uniswap" style={{ width: '100px' }} />

@@ -5,13 +5,15 @@ import './According.css';
 import img1 from '../../../../static/according/png-clipart-bitcoin-cryptocurrency-blockchain-digital-currency-satoshi-nakamoto-crypto-currency-business-metal-thumbnail.png'
 import img2 from '../../../../static/according/png-clipart-bitcoin-network-cloud-mining-cryptocurrency-crypto-angle-logo-thumbnail.png'
 import img3 from '../../../../static/according/png-clipart-can-crypto-exchange-business-can-stock-photo-thumbnail.png'
-import img4 from '../../../../static/according/44.png'
+import img4 from '../../../../static/according/44.jpg'
+import { useTranslation } from 'react-i18next';
 
 import PaymentBox from '../../../Main/PaymentBox';
 
 export default function According() {
   const [isCollapsed, setIsCollapsed] = useState<number>(1);
   const [contentHeight, setContentHeight] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   const contentRef = useRef<HTMLDivElement | null>(null);
 
@@ -67,7 +69,7 @@ export default function According() {
               <FontAwesomeIcon
                 style={{ fontSize: 250, color: 'black' }}
                 icon={faQrcode} />
-              <h1 style={{ margin: 0, textAlign: 'center' }}>Адрес кошелька получателя 124c1x134311254cx24</h1>
+              <h1 style={{ margin: 0, textAlign: 'center' }}>Recipient wallet address 124c1x134311254cx24</h1>
             </div>
           </div>
         );
@@ -76,7 +78,7 @@ export default function According() {
         return (
 
           <div style={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', borderRadius: 20, overflow: 'hidden', marginBottom: 10 }}>
-            <img style={{ width: '100%' }} src={img4} alt="" />
+            <img style={{ width: '100%', maxHeight:300 }} src={img4} alt="" />
           </div>
         );
 
@@ -92,7 +94,7 @@ export default function According() {
     >
       <div className='accordingBlockCont'>
         <h1 className='accordingHeaderTitle'>
-          Мы упрощаем вам подключение к цифровым платежам
+        {t('according.headerTitle')}
         </h1>
 
 
@@ -111,7 +113,7 @@ export default function According() {
                   alignItems: 'center',
                 }}
               >
-                <h1>Счета</h1>
+                <h1>{t('according.sections.bills.title')}</h1>
                 {isCollapsed === 1 ? (
                   <FontAwesomeIcon
                     style={{ fontSize: 25, color: 'black' }}
@@ -132,9 +134,7 @@ export default function According() {
                 }}>
                 <p style={{ margin: 0 }}>Этот способ подходит для оплаты товаров или услуг.</p>
                 <p style={{ margin: 0, paddingBottom: 10}}>
-                  Вы можете установить цену в фиатной валюте, чтобы плательщик выбрал криптовалюту и
-                  заплатил соответствующую сумму, или сразу указать предпочтительную криптовалюту, а
-                  адрес криптовалюты будет сгенерирован после выбора сети.
+                {t('according.sections.bills.description')}
                 </p>
                 <div className='contentDiv'>
                 {content(1)}
@@ -155,7 +155,7 @@ export default function According() {
                   alignItems: 'center',
                 }}
               >
-                <h1>Регулярные платежи</h1>
+                <h1>{t('according.sections.recurringPayments.title')}</h1>
                 {isCollapsed === 2 ? (
                   <FontAwesomeIcon
                     style={{ fontSize: 25, color: 'black' }}
@@ -173,9 +173,9 @@ export default function According() {
                   height: isCollapsed === 2 ? `${contentHeight}px` : '0',
                   transition: 'height 0.5s ease',
                 }}>
-                <p style={{ margin: 0 }}>Выбор бизнеса по подписке</p>
-                <p style={{ margin: 0,paddingBottom: 10 }}>
-                  Платежи на основе подписки для вашего бизнеса. Вашему клиенту нужно настроить его только один раз, чтобы регулярно взимать плату.
+                
+                <p style={{ margin: 0, paddingBottom: 10 }}>
+                {t('according.sections.recurringPayments.description')}
                 </p>
                 <div className='contentDiv'>
                 {content(2)}
@@ -196,7 +196,7 @@ export default function According() {
                   alignItems: 'center',
                 }}
               >
-                <h1>Хост</h1>
+                <h1>{t('according.sections.host.title')}</h1>
                 {isCollapsed === 3 ? (
                   <FontAwesomeIcon
                     style={{ fontSize: 25, color: 'black' }}
@@ -214,9 +214,9 @@ export default function According() {
                   height: isCollapsed === 3 ? `${contentHeight}px` : '0',
                   transition: 'height 0.5s ease',
                 }}>
-                <p style={{ margin: 0 }}>Универсальное решение для любого бизнеса</p>
+               
                 <p style={{ margin: 0,paddingBottom: 10 }}>
-                  Наиболее настраиваемый вариант, подходящий для любого типа проекта. Позвольте вашим клиентам пополнять свой личный кредит на любую сумму и использовать его без задержек.
+                {t('according.sections.host.description')}
                 </p>
                 <div className='contentDiv'>
                 {content(3)}
@@ -237,7 +237,7 @@ export default function According() {
                   alignItems: 'center',
                 }}
               >
-                <h1>Платежные ссылки</h1>
+                <h1>{t('according.sections.paymentLinks.title')}</h1>
                 {isCollapsed === 4 ? (
                   <FontAwesomeIcon
                     style={{ fontSize: 25, color: 'black' }}
@@ -255,9 +255,8 @@ export default function According() {
                   height: isCollapsed === 4 ? `${contentHeight}px` : '0',
                   transition: 'height 0.5s ease',
                 }}>
-                <p style={{ margin: 0 }}>Выбор единого платежа</p>
                 <p style={{ margin: 0,paddingBottom: 10 }}>
-                  Создайте счет, поделитесь ссылкой и получите оплату — это простое платежное решение для любого онлайн-бизнеса.
+                {t('according.sections.paymentLinks.description')}
                 </p>
                 <div className='contentDiv'>
                 {content(4)}

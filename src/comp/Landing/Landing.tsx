@@ -13,24 +13,23 @@ import Blog from './utils/Blog/Blog';
 import Footer from '../Footer/Footer';
 import BackToTop from '../BackToTop/BackToTop';
 import BurgerMenu from '../Navbar/BurgerrMenu';
+import { useTranslation } from 'react-i18next';
 
 export default function Landing() {
-  const [openBurger, setOpenBurger] = useState(false)
+  const [openBurger, setOpenBurger] = useState<boolean>(false);
+  const { t } = useTranslation();
+
   useEffect(() => {
-    // Функція для перевірки розміру вікна
     const handleResize = () => {
       if (window.innerWidth > 1150) {
-        setOpenBurger(false); // Закриваємо бургер-меню, якщо ширина більше 1150px
+        setOpenBurger(false); 
       }
     };
 
-    // Додаємо прослуховувач на зміну розміру
     window.addEventListener('resize', handleResize);
 
-    // Викликаємо функцію при першому рендері, щоб перевірити початковий розмір
     handleResize();
 
-    // Прибираємо прослуховувач при відмонтуванні компонента
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -48,13 +47,13 @@ export default function Landing() {
       
       <div className={styles.landingHeader}>
         <h3 className={styles.landingText}>
-          ПРИНИМАЙТЕ КРИПТОПЛАТЕЖИ
+        {t('landing.header.text')}
         </h3>
         <h1 className={styles.landingTitle}>
-          Криптокач
+        {t('landing.header.title')}
         </h1>
         <button className={styles.startButton}>
-          НАЧАЛО РАБОТЫ
+        {t('landing.header.startButton')}
         </button>
 
       </div>

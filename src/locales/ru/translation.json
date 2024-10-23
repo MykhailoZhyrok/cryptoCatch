@@ -1,0 +1,187 @@
+{
+    "navbar": {
+        "services": {
+            "header": "Сервисы",
+            "personal": "Личный",
+            "business": "Бизнес",
+            "wallet": {
+                "title": "Кошелек",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "p2pTrade": {
+                "title": "P2P Трейд",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "staking": {
+                "title": "Стейкинг",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "conversion": {
+                "title": "Конвертация",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "earnings": {
+                "title": "Заработок",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "whiteLabel": {
+                "title": "Шлюз WhiteLabel",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "cryptoProcessing": {
+                "title": "Криптопроцессинг",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "merchantCatalog": {
+                "title": "Каталог мерчантов",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            "massPayments": {
+                "title": "Массовые выплаты",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        },
+        "links": {
+            "tariffs": "Тарифы",
+            "blog": "Блог"
+        },
+        "long": {
+            "log": "Вход",
+            "reg": "Регистрация"
+        }
+    },
+    "landing": {
+        "header": {
+            "text": "ПРИНИМАЙТЕ КРИПТОПЛАТЕЖИ",
+            "title": "Криптокач",
+            "startButton": "НАЧАЛО РАБОТЫ"
+        }
+    },
+    "according": {
+        "headerTitle": "Мы упрощаем вам подключение к цифровым платежам",
+        "sections": {
+            "bills": {
+                "title": "Счета",
+                "description": "Этот способ подходит для оплаты товаров или услуг. Вы можете установить цену в фиатной валюте, чтобы плательщик выбрал криптовалюту и заплатил соответствующую сумму, или сразу указать предпочтительную криптовалюту, а адрес криптовалюты будет сгенерирован после выбора сети."
+            },
+            "recurringPayments": {
+                "title": "Регулярные платежи",
+                "description": "Выбор бизнеса по подписке. Платежи на основе подписки для вашего бизнеса. Вашему клиенту нужно настроить его только один раз, чтобы регулярно взимать плату."
+            },
+            "host": {
+                "title": "Хост",
+                "description": "Универсальное решение для любого бизнеса. Наиболее настраиваемый вариант, подходящий для любого типа проекта. Позвольте вашим клиентам пополнять свой личный кредит на любую сумму и использовать его без задержек."
+            },
+            "paymentLinks": {
+                "title": "Платежные ссылки",
+                "description": "Выбор единого платежа. Создайте счет, поделитесь ссылкой и получите оплату — это простое платежное решение для любого онлайн-бизнеса."
+            }
+        }
+    },
+    "slider": {
+        "slide1": {
+            "title": "Минт PTPRD: запустите свои PTPRD в работу",
+            "text": "Начните выводить и конвертировать накопленные PTPRD токены прямо сейчас. Доступно на Uriswap."
+        },
+        "slide2": {
+            "title": "PTPRD airdrops",
+            "text": "Начните выводить и конвертировать накопленные Cryptomus токены прямо сейчас. Доступно на Uniswap."
+        }
+    },
+    "steps": {
+        "title": "Как принимать криптовалютные платежи с CryptoProd",
+        "startButton": "НАЧАЛО РАБОТЫ",
+        "journeyTitle": "1. Начните свое путешествие",
+        "journeyDescription": "Присоединяйтесь к CryptoProd, зарегистрировавшись с некастодиальным кошельком, номером телефона или адресом электронной почты, чтобы начать принимать платежи.",
+        "createMerchantTitle": "Создать продавца",
+        "inputNameLabel": "Введите имя",
+        "firstMerchantPlaceholder": "Первый торговец",
+        "createButton": "Cоздать",
+        "firstMerchantTitle": "2. Создайте своего первого продавца",
+        "firstMerchantDescription": "Настройте свой первый торговый счет в Cryptomus, чтобы начать принимать платежи и получить надежный бизнес-кошелек.",
+        "apiKeysTitle": "Ваши ключи API",
+        "statusTitle": "Статус",
+        "activeStatus": "Активный",
+        "paymentApiKeyTitle": "Платежный API-ключ",
+        "paymentApiKey": "kTaz9Eh*********OBh9aG5",
+        "regeneratePaymentKey": "Повторно сгенерируйте ключ API платежей",
+        "payoutApiKeyTitle": "API-ключ выплаты",
+        "payoutApiKey": "kTaz9Eh*********OBh9355",
+        "regeneratePayoutKey": "Повторно сгенерируйте ключ Payout API",
+        "generateApiKeysTitle": "3. Сгенерировать API-ключи",
+        "generateApiKeysDescription": "Настройте свой первый торговый счет в Cryptomus, чтобы начать принимать платежи и получить надежный бизнес-кошелек."
+    },
+    "suppotCoin": {
+        "title": "Поддерживаемые монеты и блокчейны"
+    },
+    "features": {
+        "header": "Каковы функции криптоплатежного шлюза CrypProd?",
+        "textItem1": "Нет скользящих резервов/",
+        "textItem2": "Глобальное покрытие",
+        "textItem3": "Нулевые возвратные платежи/",
+        "textItem4": "Мгновенные транзакции",
+        "feature1": {
+            "title": "Защита от волатильности",
+            "description": "Автоматическая конвертация входящих платежей в стейблкоины защитит от волатильности криптовалюты, так же как и функция автоматического конвертирования вывода, которая позволяет вам выводить криптовалюту в предпочитаемой валюте — и обе функции можно использовать совершенно бесплатно!"
+        },
+        "feature2": {
+            "title": "Группа поддержки",
+            "description": "Служба поддержки, доступная в Telegram, по электронной почте, прямо на нашем сайте в виде тикетов или в виде личного менеджера для наших продавцов, всегда рядом, чтобы решить проблемы и мгновенно ответить на вопросы ваших клиентов."
+        },
+        "feature3": {
+            "title": "Управление статусом транзакций",
+            "description": "Отрегулируйте допустимую точность оплаты, проверьте, был ли счет переплачен или недоплачен, и отправьте дополнительный счет для сбора оставшейся суммы."
+        },
+        "feature4": {
+            "title": "Массовые выплаты",
+            "description": "Совершайте массовые выплаты на тысячи адресов с автоматической конвертацией всего за один момент."
+        },
+        "feature5": {
+            "title": "Гибкие комиссии для каждой монеты",
+            "description": "Установите дополнительные комиссии или добавьте скидку на выбранные монеты."
+        },
+        "allFeatures": "ВСЕ ФУНКЦИИ"
+    },
+    "blog": {
+        "title": "Блог",
+        "post": {
+            "title": "Торговля Dogecoin для начинающих: основы, типы и стратегии",
+            "date": "17 октября 2024г.",
+            "comments": "0 комментариев",
+            "description": "Откройте для себя ключевые стратегии торговли Dogecoin и получите советы для успешных сделок!",
+            "tags": {
+                "cryptocurrencies": "Криптовалюты",
+                "tutorial": "Туториал"
+            }
+        }
+    },
+    "footer": {
+        "company": "Компания",
+        "home": "Домой",
+        "tariffs": "Тарифы",
+        "roadmap": "Дорожная карта",
+        "brandGuide": "Руководство бренда",
+        "blog": "Блог",
+        "faq": "Часто задаваемые вопросы",
+        "contacts": "Контакты",
+        "personal": "Личный",
+        "wallet": "Кошелек",
+        "p2pExchange": "P2P-обмен",
+        "staking": "Стейкинг",
+        "conversion": "Конвертация",
+        "earnings": "Заработок",
+        "explorer": "Обозреватель",
+        "business": "Бизнес",
+        "whiteLabel": "White Label",
+        "cryptoProcessing": "Криптопроцессинг",
+        "eCommercePlugins": "Плагины для электронной коммерции",
+        "api": "API",
+        "support": "Поддержка",
+        "telegram": "Telegram",
+        "email": "Электронная почта",
+        "socialMedia": "Социальные сети",
+        "privacyPolicy": "Политика конфиденциальности",
+        "termsOfUse": "Условия использования",
+        "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium architecto corrupti eveniet temporibus aliquam? Blanditiis non ducimus incidunt molestiae totam. Laborum, unde delectus. Ratione, magnam possimus quam voluptatibus natus deleniti!"
+    }
+}

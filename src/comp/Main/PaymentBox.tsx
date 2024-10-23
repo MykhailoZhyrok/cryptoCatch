@@ -50,7 +50,7 @@ const PaymentBox: React.FC = () => {
 
                     <CountdownCircle duration={totalDuration} timeLeft={timeLeft} />
                     <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left', marginLeft: 10 }}>
-                        <p style={{ margin: 0 }}>Время истечения:</p>
+                        <p style={{ margin: 0 }}>Expiry time:</p>
                         <p style={{ margin: 0, color: 'green' }}>{formatTime(timeLeft)}</p>
                     </div>
 
@@ -64,13 +64,13 @@ const PaymentBox: React.FC = () => {
                     </select>
                     <button className={styles.paymentButton}>
                         <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
-                            <h5 style={{ margin: 0 }}>Оплата с помощью CryptoLogo</h5>
+                            <h5 style={{ margin: 0 }}>Payment via CryptoLogo</h5>
                         </div>
                     </button>
                     <div style={{width: '100%', display: 'flex', justifyContent: 'center', height: 10}}>
                     <div style={{display: 'flex', justifyContent: 'center'}}>
                         <div style={{display: 'flex', margin: 0,height: 10, backgroundColor: 'black', padding: '0px 15px', alignItems: 'center', paddingTop: 5}}>
-                        <h5 style={{margin: 0}}>Или</h5>
+                        <h5 style={{margin: 0}}>Or</h5>
                         </div>
                         
                     </div>
