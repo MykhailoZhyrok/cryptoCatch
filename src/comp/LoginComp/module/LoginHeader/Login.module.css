@@ -1,0 +1,54 @@
+.mainWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logoCont{
+    display: flex;
+     color: white;
+     align-items: center;
+    
+}
+
+.toolsCont {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.logoIcon {
+    font-size: 40px;
+}
+
+.separator {
+    background-color: white;
+    height: 50px;
+    width: 1px;
+}
+
+.buttonStart {
+    border: 0;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+

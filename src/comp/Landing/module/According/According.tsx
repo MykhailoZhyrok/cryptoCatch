@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCubes, faMinus, faPlus, faQrcode } from '@fortawesome/free-solid-svg-icons';
 import './According.css';
 import img1 from '../../../../static/according/png-clipart-bitcoin-cryptocurrency-blockchain-digital-currency-satoshi-nakamoto-crypto-currency-business-metal-thumbnail.png'
-import img2 from '../../../../static/according/png-clipart-bitcoin-network-cloud-mining-cryptocurrency-crypto-angle-logo-thumbnail.png'
-import img3 from '../../../../static/according/png-clipart-can-crypto-exchange-business-can-stock-photo-thumbnail.png'
+// import img2 from '../../../../static/according/png-clipart-bitcoin-network-cloud-mining-cryptocurrency-crypto-angle-logo-thumbnail.png'
+// import img3 from '../../../../static/according/png-clipart-can-crypto-exchange-business-can-stock-photo-thumbnail.png'
 import img4 from '../../../../static/according/44.jpg'
 import { useTranslation } from 'react-i18next';
 
@@ -21,17 +21,17 @@ export default function According() {
     if (contentRef.current) {
       setContentHeight(contentRef.current.scrollHeight);
     }
-    
+
   }, [isCollapsed]);
 
   useEffect(() => {
-    
-    window.addEventListener('resize', (()=>{
+
+    window.addEventListener('resize', (() => {
       if (contentRef.current) {
         setContentHeight(contentRef.current.scrollHeight);
       }
     }))
-    return () => window.removeEventListener('resize', (()=>{
+    return () => window.removeEventListener('resize', (() => {
       if (contentRef.current) {
         setContentHeight(contentRef.current.scrollHeight);
       }
@@ -52,20 +52,21 @@ export default function According() {
 
       case 2:
         return (
-          <div style={{ height: "100%",width: '100%', backgroundColor: 'white', borderRadius: 20, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 10}}>
+          <div style={{ height: "100%", width: '100%', backgroundColor: 'white', borderRadius: 20, overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 10 }}>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
               <div className="logoCont">
                 <FontAwesomeIcon style={{ fontSize: 40 }} icon={faCubes} />
                 <h1 style={{ margin: 0 }}>CryptoProd</h1>
               </div>
+              <img style={{ maxWidth: '100%' }} src={img1} alt="" />
             </div>
           </div>
         );
 
       case 3:
         return (
-          <div style={{ height: "100%",width: '100%', backgroundColor: 'white', borderRadius: 20, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 10 }}>
-            <div style={{ display: 'flex',   flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          <div style={{ height: "100%", width: '100%', backgroundColor: 'white', borderRadius: 20, display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 10 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
               <FontAwesomeIcon
                 style={{ fontSize: 250, color: 'black' }}
                 icon={faQrcode} />
@@ -78,7 +79,7 @@ export default function According() {
         return (
 
           <div style={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', borderRadius: 20, overflow: 'hidden', marginBottom: 10 }}>
-            <img style={{ width: '100%', maxHeight:300 }} src={img4} alt="" />
+            <img style={{ maxHeight: 300 }} src={img4} alt="" />
           </div>
         );
 
@@ -94,7 +95,7 @@ export default function According() {
     >
       <div className='accordingBlockCont'>
         <h1 className='accordingHeaderTitle'>
-        {t('according.headerTitle')}
+          {t('according.headerTitle')}
         </h1>
 
 
@@ -126,20 +127,20 @@ export default function According() {
                   />
                 )}
               </div>
-              <div ref={isCollapsed === 1 ? contentRef : null}  style={{
-                  overflow: 'hidden',
-                  
-                  height: isCollapsed === 1 ? `${contentHeight}px` : '0',
-                  transition: 'height 0.5s ease',
-                }}>
+              <div ref={isCollapsed === 1 ? contentRef : null} style={{
+                overflow: 'hidden',
+
+                height: isCollapsed === 1 ? `${contentHeight}px` : '0',
+                transition: 'height 0.5s ease',
+              }}>
                 <p style={{ margin: 0 }}>Этот способ подходит для оплаты товаров или услуг.</p>
-                <p style={{ margin: 0, paddingBottom: 10}}>
-                {t('according.sections.bills.description')}
+                <p style={{ margin: 0, paddingBottom: 10 }}>
+                  {t('according.sections.bills.description')}
                 </p>
                 <div className='contentDiv'>
-                {content(1)}
+                  {content(1)}
                 </div>
-                
+
               </div>
             </div>
 
@@ -168,17 +169,17 @@ export default function According() {
                   />
                 )}
               </div>
-              <div ref={isCollapsed === 2 ? contentRef : null}  style={{
+              <div ref={isCollapsed === 2 ? contentRef : null} style={{
                 overflow: 'hidden',
-                  height: isCollapsed === 2 ? `${contentHeight}px` : '0',
-                  transition: 'height 0.5s ease',
-                }}>
-                
+                height: isCollapsed === 2 ? `${contentHeight}px` : '0',
+                transition: 'height 0.5s ease',
+              }}>
+
                 <p style={{ margin: 0, paddingBottom: 10 }}>
-                {t('according.sections.recurringPayments.description')}
+                  {t('according.sections.recurringPayments.description')}
                 </p>
                 <div className='contentDiv'>
-                {content(2)}
+                  {content(2)}
                 </div>
               </div>
             </div>
@@ -209,17 +210,17 @@ export default function According() {
                   />
                 )}
               </div>
-              <div ref={isCollapsed === 3 ? contentRef : null}   style={{
+              <div ref={isCollapsed === 3 ? contentRef : null} style={{
                 overflow: 'hidden',
-                  height: isCollapsed === 3 ? `${contentHeight}px` : '0',
-                  transition: 'height 0.5s ease',
-                }}>
-               
-                <p style={{ margin: 0,paddingBottom: 10 }}>
-                {t('according.sections.host.description')}
+                height: isCollapsed === 3 ? `${contentHeight}px` : '0',
+                transition: 'height 0.5s ease',
+              }}>
+
+                <p style={{ margin: 0, paddingBottom: 10 }}>
+                  {t('according.sections.host.description')}
                 </p>
                 <div className='contentDiv'>
-                {content(3)}
+                  {content(3)}
                 </div>
               </div>
             </div>
@@ -250,16 +251,16 @@ export default function According() {
                   />
                 )}
               </div>
-              <div ref={isCollapsed === 4 ? contentRef : null}  style={{
+              <div ref={isCollapsed === 4 ? contentRef : null} style={{
                 overflow: 'hidden',
-                  height: isCollapsed === 4 ? `${contentHeight}px` : '0',
-                  transition: 'height 0.5s ease',
-                }}>
-                <p style={{ margin: 0,paddingBottom: 10 }}>
-                {t('according.sections.paymentLinks.description')}
+                height: isCollapsed === 4 ? `${contentHeight}px` : '0',
+                transition: 'height 0.5s ease',
+              }}>
+                <p style={{ margin: 0, paddingBottom: 10 }}>
+                  {t('according.sections.paymentLinks.description')}
                 </p>
                 <div className='contentDiv'>
-                {content(4)}
+                  {content(4)}
                 </div>
               </div>
             </div>

@@ -16,6 +16,7 @@ import BurgerMenu from './BurgerrMenu';
 import Language from './Language';
 import { useTranslation } from 'react-i18next';
 
+import { useNavigate } from 'react-router-dom';
 
 interface BurgerMenuProps {
     setOpenBurger: React.Dispatch<React.SetStateAction<boolean>>;
@@ -32,6 +33,7 @@ export default function Navbar({ setOpenBurger }: BurgerMenuProps) {
     const buttonRef = useRef<HTMLDivElement>(null);
     const langModRef = useRef<HTMLDivElement>(null);
     const buttonlang = useRef<HTMLDivElement>(null);
+    const navigate= useNavigate()
     const toggleServices = () => {
 
         if (!isOpen) {
@@ -384,7 +386,7 @@ export default function Navbar({ setOpenBurger }: BurgerMenuProps) {
                                 </div>
                                 {visibleLanguage &&
 
-                                    <Language containerRef={langModRef} />
+                                    <Language containerRef={langModRef} setVisibleLanguage={setVisibleLanguage}/>
 
                                 }
                             </div>
@@ -397,12 +399,14 @@ export default function Navbar({ setOpenBurger }: BurgerMenuProps) {
                             </div>
                         </div>
                         <div className={styles.buttonCont}>
-                            <a className={styles.linkLog} href="#">
-                                <button className={`${styles.logButton} ${styles.buttonPod}`}>
+                            <a className={styles.linkLog} >
+                                <button className={`${styles.logButton} ${styles.buttonPod}`} 
+                                onClick={() => navigate("/cryptoCatch/login")}>
                                 {t('navbar.long.log')}
                                 </button></a>
-                            <a className={styles.linkLog} href="#">
-                                <button className={`${styles.regButton} ${styles.buttonPod}`}>{t('navbar.long.reg')}
+                            <a className={styles.linkLog}>
+                                
+                                <button className={`${styles.regButton} ${styles.buttonPod}`} onClick={()=>{}}>{t('navbar.long.reg')}
                                 </button></a>
                         </div>
 

@@ -4,6 +4,7 @@ import { faChevronDown, faCaretRight, faWallet, faPeopleCarryBox, faLayerGroup, 
 import { faBitcoin } from '@fortawesome/free-brands-svg-icons';
 import { NavLink } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
 
 import styles from './BurgerMenu.module.css';
 interface BurgerMenuProps {
@@ -11,6 +12,8 @@ interface BurgerMenuProps {
 }
 
 export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
+    const { t } = useTranslation();
+
     const [isOpen, setIsOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const [visibleSelf, setVisibleSelf] = useState(false);
@@ -77,7 +80,7 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
             </div>
 
             <div ref={buttonRef} className={styles.headerService} onClick={toggleServices}>
-                <span className={styles.serviceText}>Сервисы</span>
+                <span className={styles.serviceText}>{t('navbar.services.header')}</span>
                 <FontAwesomeIcon style={{ fontSize: 22 }} icon={faChevronDown} className={isOpen ? styles.iconRotated : styles.icon} />
             </div>
 
@@ -85,7 +88,7 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                 <div className={styles.serviceSettings}>
                     <div className={styles.serviceColl} onClick={toggleSelf}>
                         <div className={styles.serviceSettingsHeader}>
-                            <h5 className={styles.serviceTitle}>Личний</h5>
+                            <h5 className={styles.serviceTitle}>{t('navbar.services.personal')}</h5>
                             <FontAwesomeIcon style={{ fontSize: 22 }} icon={faChevronDown} className={visibleSelf ? styles.iconRotated : styles.icon} />
                         </div>
                         <div className={styles.navbatContMain}>
@@ -97,8 +100,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         </div>
 
                                         <div>
-                                            <h5>Кошелек</h5>
-                                            <p style={{ margin: 0 }}>Управление вашим крипто-кошельком</p>
+                                            <h5>{t('navbar.services.wallet.title')}</h5>
+                                            <p style={{ margin: 0 }}>{t('navbar.services.wallet.description')}</p>
                                         </div>
                                     </div>
                                     <div className={styles.serviceCollInn}>
@@ -107,8 +110,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         </div>
 
                                         <div>
-                                            <h5>P2P Трейд</h5>
-                                            <p style={{ margin: 0 }}>Торговля между пользователями</p>
+                                            <h5>{t('navbar.services.p2pTrade.title')}</h5>
+                                            <p style={{ margin: 0 }}>{t('navbar.services.p2pTrade.description')}</p>
                                         </div>
                                     </div>
                                     <div className={styles.serviceCollInn}>
@@ -117,8 +120,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         </div>
 
                                         <div>
-                                            <h5>Стейкинг</h5>
-                                            <p style={{ margin: 0 }}>Зарабатывайте с помощью стейкинга</p>
+                                            <h5>{t('navbar.services.staking.title')}</h5>
+                                            <p style={{ margin: 0 }}>{t('navbar.services.staking.description')}</p>
                                         </div>
                                     </div>
                                     <div className={styles.serviceCollInn}>
@@ -127,8 +130,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         </div>
 
                                         <div>
-                                            <h5>Конвертация</h5>
-                                            <p style={{ margin: 0 }}>Обменивайте валюты</p>
+                                            <h5>{t('navbar.services.conversion.title')}</h5>
+                                            <p style={{ margin: 0 }}>{t('navbar.services.conversion.description')}</p>
                                         </div>
                                     </div>
                                     <div className={styles.serviceCollInn}>
@@ -137,8 +140,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         </div>
 
                                         <div>
-                                            <h5>Зароботок</h5>
-                                            <p style={{ margin: 0 }}>Дополнительные способы дохода</p>
+                                            <h5>{t('navbar.services.earnings.title')}</h5>
+                                            <p style={{ margin: 0 }}>{t('navbar.services.earnings.description')}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -148,7 +151,7 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                     </div>
                     <div className={styles.serviceColl} onClick={toggleBusiness}>
                         <div className={styles.serviceSettingsHeader}>
-                            <h5 className={styles.serviceTitle}>Бізнес</h5>
+                            <h5 className={styles.serviceTitle}>{t('navbar.services.business')}</h5>
 
                             <FontAwesomeIcon style={{ fontSize: 22 }} icon={faChevronDown} className={visibleBusiness ? styles.iconRotated : styles.icon} />
 
@@ -164,8 +167,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         <FontAwesomeIcon style={{ fontSize: 30, textAlign: 'center' }} icon={faStore} />
                                     </div>
                                     <div>
-                                        <h5>Шлюз WhiteLabel</h5>
-                                        <p style={{ margin: 0 }}>Решения для бизнеса</p>
+                                        <h5>{t('navbar.services.whiteLabel.title')} </h5>
+                                        <p style={{ margin: 0 }}>{t('navbar.services.whiteLabel.description')}</p>
                                     </div>
                                 </div>
                                 <div className={styles.serviceCollInn}>
@@ -173,8 +176,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         <FontAwesomeIcon icon={faBitcoin} style={{ fontSize: 30, width: 40 }} />
                                     </div>
                                     <div>
-                                        <h5>Криптопроцессинг</h5>
-                                        <p style={{ margin: 0 }}>Интеграция криптоплатежей</p>
+                                        <h5>{t('navbar.services.cryptoProcessing.title')}</h5>
+                                        <p style={{ margin: 0 }}>{t('navbar.services.cryptoProcessing.description')}</p>
                                     </div>
                                 </div>
                                 <div className={styles.serviceCollInn}>
@@ -183,8 +186,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                         <FontAwesomeIcon style={{ fontSize: 30, textAlign: 'center' }} icon={faClipboardList} />
                                     </div>
                                     <div>
-                                        <h5>Каталог мерчантов</h5>
-                                        <p style={{ margin: 0 }}>Управление вашим каталогом</p>
+                                        <h5>{t('navbar.services.merchantCatalog.title')}</h5>
+                                        <p style={{ margin: 0 }}>{t('navbar.services.merchantCatalog.description')}</p>
                                     </div>
                                 </div>
                                 <div className={styles.serviceCollInn}>
@@ -194,8 +197,8 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                                     </div>
 
                                     <div>
-                                        <h5>Массовые выплаты</h5>
-                                        <p style={{ margin: 0 }}>Платежи для вашего бизнеса</p>
+                                        <h5>{t('navbar.services.massPayments.title')}</h5>
+                                        <p style={{ margin: 0 }}>{t('navbar.services.massPayments.description')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +215,7 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                     to="/paymants"
                     style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                    Тарифы
+                    {t('navbar.links.tariffs')}
                 </NavLink>
             </li>
             <li className={styles.buttonNavCont}>
@@ -221,7 +224,7 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                     to="/paymants"
                     style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                    Блог
+                    {t('navbar.links.blog')}
                 </NavLink>
             </li>
             <li className={styles.buttonNavCont}>
@@ -234,13 +237,15 @@ export default function BurgerMenu({ setOpenBurger }: BurgerMenuProps) {
                 </NavLink>
             </li>
             <div className={styles.buttonCont}>
-                <a className={styles.linkLog} href="#">
+                <a className={styles.linkLogin} href="#">
                     <button className={`${styles.logButton} ${styles.buttonPod}`}>
-                        Вход
-                    </button></a>
-                <a className={styles.linkLog} href="#">
-                    <button className={`${styles.regButton} ${styles.buttonPod}`}>Регистраия
-                    </button></a>
+                    {t('navbar.long.log')}
+                    </button>
+                </a>
+                <a className={styles.linkReg} href="#">
+                    <button className={`${styles.regButton} ${styles.buttonPod}`}>{t('navbar.long.reg')}
+                    </button>
+                </a>
             </div>
         </div >
     );
